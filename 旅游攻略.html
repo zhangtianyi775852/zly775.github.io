@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body {
+			    font-family: Arial, sans-serif;  
+			    background-color: #fff;  
+			    margin: 0 auto;  
+				padding: 0;
+				background-color:#CBE8FF ;
+				width: 1650px;
+			   
+			}  
+			.header{
+					background: url("img/background.jpg") no-repeat top center;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+					height: 186px;
+				}
+				.logo{
+					
+					padding-bottom: 30px;
+					padding-left: 100px;
+				}
+			.search-container {  
+			    max-width: 600px;  
+			    margin: 0 auto;  
+			    text-align: center;  
+				padding-left: 550px;
+			}  
+			  
+			h1 {  
+			    color: green;  
+			    text-align: center;  
+			    margin-bottom: 20px;  
+			}  
+			  
+			.search-form {  
+			    display: flex;  
+			    align-items: center;  
+			    justify-content: center;  
+			    margin-bottom: 20px;  
+			}  
+			  
+			.search-form input[type="text"] {  
+			    padding: 10px;  
+			    font-size: 16px;  
+			    border: 1px solid #ccc;  
+			    border-radius: 4px 0 0 4px;  
+				width: 200px;
+			}  
+			  
+			.search-form button {  
+			    padding: 10px 20px;  
+			    font-size: 16px;  
+			    color: white;  
+			    background-color: green; /* Or use the same green as the title */  
+			    border: none;  
+			    border-radius: 0 4px 4px 0;  
+			    cursor: pointer;  
+			}  
+			  
+			.search-form button:hover {  
+			    background-color: darkgreen; /* Optional: darker green on hover */  
+			}
+				
+				*{
+				padding: 0px;
+					margin: 0;
+				}
+				.nav{
+					margin: 0;
+					padding: 0;
+					box-sizing: border-box;
+					background-color: #ffe0b2;
+					list-style: none;
+					overflow: hidden;
+				}
+				.nav li{
+					float: left;
+					width: 33.33%;
+					height: 60px;
+					display: flex;
+					justify-content: center;
+				}
+				.nav a{
+					display: block;
+					width: 50%;
+					text-decoration: none;
+					text-align: center;
+					padding: 20px;
+					color: wight;
+					font-weight: bold;
+					font-size: 20;
+				}
+				.user-actions {
+				padding-right: 200px; 
+				padding-top: 100px;
+				}  
+				  
+				.action-link {  
+				  display: inline-block; /* 作为行内块级元素显示，以便设置间距 */  
+				  margin: 0 5px; /* 链接之间的间距 */  
+				  text-decoration: none; /* 去除下划线 */  
+				  color: sandybrown; /* 文本颜色 */  
+				  font-size: 20px;  
+				}  
+				.action-button {  
+				  display: inline-block;  
+				  margin: 0 5px;  
+				  padding: 5px 10px; /* 内边距 */  
+				  background-color: #f00; /* 示例背景色，您可以根据需要更改 */  
+				  color: #fff; /* 文本颜色 */  
+				  border: none; /* 去除边框 */  
+				  cursor: pointer; /* 鼠标悬停时显示小手图标 */  
+				  /* 可以添加其他样式，如边框半径、阴影等 */  
+				}  
+				.action-link:hover,  
+				.action-button:hover {  
+				  /* 例如，您可以更改背景色或文本颜色 */  
+				  color: #f00;  
+				  text-decoration: underline;  
+				}  
+				.box{
+					width:1000px ;
+					height: 1000px;
+					margin-left: auto;  
+					    margin-right: auto;  
+					
+				}
+				.ntitle{
+						font-size: 35px;
+						    text-align: center;
+						    font-weight: bold;
+						    padding: 15px 0px;
+						    color: #333;
+							padding: 30px;
+					}
+					
+					.text p{
+						text-align:justify;
+						text-indent:2em;
+						font-size: 30px;
+						font-weight: 40px;
+					}
+				.text span{
+					font-family:SimSun;
+					font-size:20px;"
+				}
+				.text li{
+					font-size: 20px;
+				}
+				.image{
+					text-align:justify;
+					text-indent:2em;
+						font-family:SimSun;
+						font-size:16px;
+						padding-left:100px;
+						padding-top: 20px;;
+				}
+				.footer{
+					background-color: #ccc;
+					text-align: center;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">  
+			            <img src="img/logo.png" alt="" width="400px"  height="100px"/>  
+			        </div>  
+			        <div class="search-container">  
+			            <form class="search-form">  
+			                <input type="text" id="search-input" placeholder="请输入您要查找的信息">  
+			                <button type="submit">搜索</button>  
+			            </form>  
+			        </div>  
+					<div class="user-actions">
+					   <a href="登录.html" class="action-link">登录</a>  
+					   <a href="注册.html" class="action-link">注册</a>  
+					 </div>  
+		</div>
+		<div class="nav">
+					<li><a href="主页.html">首页</a></li>
+					<li><a href="目录.html">列表页</a>></li>
+					<li><a href="预定.html">在线预订</a></li>
+				  </div>
+				<div class="box">
+					<div class="ntitle">下姜村 ·旅游攻略</div>
+					<div class="text">
+						<p>
+							<span>
+								<li>下姜村是一个充满历史文化气息的古村落,位于浙江省杭州市淳安县,枫树岭镇,以其独特的传统文化风貌、美丽的自然景观和精致的古建筑而闻名。</li>
+							<p>景点介绍</p><li>下姜村拥有历史悠久的寺庙、祠堂、古屋等众多古建筑，其中最具代表性的景点有杨家祠堂、何家祠堂、大禹庙、百年柏树、望水楼、听竹院等。这些景点不仅展现了淳安的传统文化，还能让游客体验到传统乡村的生活方式。</li>
+								
+							<p>时间安排</p><li>游览下姜村一般需要半天到一天的时间，推荐早上出发，因为早上人少，游览体验更佳。游览结束后，可以在下姜村的特色美食店尝尝当地美食。</li>
+								
+							<p>交通方式：</p><li>从杭州市中心出发，可以选择乘坐公共汽车或者自驾车前往下姜村。自驾车需要走杭金衢高速-杭宁高速-莫干山路-栖凤山路-枫树岭路。公共汽车的话，可以在杭州汽车北站乘坐淳安快线，到达淳安县城后再换乘前往下姜村的公交车。</li>
+								
+							<p>注意事项：</p><li>在下姜村游览时，需要注意住宿和饮食的安排。下姜村是一个乡村景区，只有少数的民宿和酒店，游客预订时需要提前了解情况。此外，下姜村的美食丰富多样，既有当地特色小吃也有海鲜等，但游客在尝试美食之前，需要注意食品卫生和自身口味。</li>
+								
+							<p>游玩建议</p><li>下姜村四季如画，每个季节都有不同的风景等待游客发现。春天来此是最合适不过的，满山遍野的花朵会让人流连忘返。夏天也是不错的选择，因为这里水质极佳，是个消暑的好地方。</li>
+								
+								<li>总之，下姜村是一个非常适合度假和休闲的地方，游客可以在这里感受到传统的乡村生活，也可以欣赏到独特的自然风光</li>
+							</span>
+						</p>
+						<div class="image">
+							<video src="img/YGEMCFbvlx08b1mPTyOk01041204i6cV0E020.mp4" controls autoplay loop width="700px" height="400px"></video>
+						</div>
+					</div>
+					<div class="footer">
+						<p>&copy;张天一20220000610</p>
+					</div>
+				</div>
+	</body>
+</html>

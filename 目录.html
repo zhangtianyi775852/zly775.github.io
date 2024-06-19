@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		
+		body {
+			    font-family: Arial, sans-serif;  
+			    background-color: #fff;  
+			    margin: 0 auto;  
+				background-color:#CBE8FF ;
+				width: 1660px;
+			   
+			}  
+			  
+			.header{
+				background: url("img/background.jpg") no-repeat top center;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;
+				height: 186px;
+			}
+			.logo{
+				
+				padding-bottom: 30px;
+				padding-left: 100px;
+			}
+		.search-container {  
+		    max-width: 600px;  
+		    margin: 0 auto;  
+		    text-align: center;  
+			padding-left: 550px;
+		}  
+		  
+		h1 {  
+		    color: green;  
+		    text-align: center;  
+		    margin-bottom: 20px;  
+		}  
+		  
+		.search-form {  
+		    display: flex;  
+		    align-items: center;  
+		    justify-content: center;  
+		    margin-bottom: 20px;  
+		}  
+		  
+		.search-form input[type="text"] {  
+		    padding: 10px;  
+		    font-size: 16px;  
+		    border: 1px solid #ccc;  
+		    border-radius: 4px 0 0 4px;  
+			width: 200px;
+		}  
+		  
+		.search-form button {  
+		    padding: 10px 20px;  
+		    font-size: 16px;  
+		    color: white;  
+		    background-color: green; /* Or use the same green as the title */  
+		    border: none;  
+		    border-radius: 0 4px 4px 0;  
+		    cursor: pointer;  
+		}  
+		  
+		.search-form button:hover {  
+		    background-color: darkgreen; /* Optional: darker green on hover */  
+		}
+			
+			
+			
+			
+			
+			
+			
+			.user-actions {  
+			padding-right: 200px; 
+			padding-top: 100px;
+			}  
+			  
+			.action-link {  
+			  display: inline-block; /* 作为行内块级元素显示，以便设置间距 */  
+			  margin: 0 5px; /* 链接之间的间距 */  
+			  text-decoration: none; /* 去除下划线 */  
+			  color: sandybrown; /* 文本颜色 */  
+			  font-size: 20px;  
+			}  
+			.action-button {  
+			  display: inline-block;  
+			  margin: 0 5px;  
+			  padding: 5px 10px; /* 内边距 */  
+			  background-color: #f00; /* 示例背景色，您可以根据需要更改 */  
+			  color: #fff; /* 文本颜色 */  
+			  border: none; /* 去除边框 */  
+			  cursor: pointer; /* 鼠标悬停时显示小手图标 */  
+			  /* 可以添加其他样式，如边框半径、阴影等 */  
+			}  
+			.action-link:hover,  
+			.action-button:hover {  
+			  /* 例如，您可以更改背景色或文本颜色 */  
+			  color: #f00;  
+			  text-decoration: underline;  
+			}  
+			  
+			/* 如果您选择使用按钮样式 */  
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			*{
+			padding: 0px;
+				margin: 0;
+			}
+			.nav{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				background-color: #ffe0b2;
+				list-style: none;
+				overflow: hidden;
+			}
+			.nav li{
+				float: left;
+				width: 33.3%;
+				display: flex;
+				justify-content: center;
+			}
+			.nav a{
+				display: block;
+				width: 50%;
+				text-decoration: none;
+				text-align: center;
+				padding: 20px;
+				color: wight;
+				font-weight: bold;
+				font-size: 20;
+			}
+			.nav ul li ul{
+				position: relative;
+				top: 40px;
+				left: 0;
+				display: none;
+			}
+		.container {
+		    display: flex;  
+		    justify-content: space-between; /* 均匀分布列之间的空间 */  
+		}  
+		  
+		.column {  
+		    flex: 1; /* 弹性布局，使得三列平均分配空间 */  
+		    padding: 20px;  
+		    box-sizing: border-box; /* 包括padding和border在内的宽度 */  
+		}  
+		  
+		.column h2 {  
+		    margin-top: 0;  
+		}  
+		  
+		/* 响应式布局：在小屏幕上改为垂直堆叠 */  
+		@media (max-width: 600px) {  
+		    .container {  
+		        flex-direction: column;  
+		    }  
+		    .column {  
+		        margin-bottom: 20px;  
+		    }  
+		}
+		.column p{
+			text-indent: 2rem;
+		}
+		
+		
+		.image-container {  
+		    position: relative;  
+		    width:500px; /* 可以根据需要调整 */  
+		    height: 400px; /* 可以根据需要调整 */  
+		    overflow: hidden;  
+		}  
+		  
+		.image-container img {  
+		    width: 500px;  
+		    height: 400px;  
+		    transition: transform 0.3s ease;  
+		}  
+		  
+		.image-container:hover img {  
+		    transform: scale(1.2); /* 放大比例，可以根据需要调整 */  
+		    transition: transform 0.3s ease;  
+		}  
+		  
+		.overlay {  
+		    position: absolute;  
+		    top: 0;  
+		    left: 0;  
+		    width: 500px;  
+		    height: 400px;  /* 半透明背景，可以根据需要调整 */  
+		    opacity: 0;  
+		    transition: opacity 0.3s ease;  
+		}  
+		  
+		.image-container:hover .overlay {  
+		    opacity: 1;  
+		}
+		.footer{
+			background-color: #ccc;
+			text-align: center;
+		}
+		
+		
+		
+		
+				
+		</style>
+	</head>
+	<body>
+		
+		<div class="header">
+			<div class="logo">  
+			            <img src="img/logo.png" alt="" width="400px"  height="100px"/>  
+			        </div>  
+			        <div class="search-container">  
+			            <form class="search-form">  
+			                <input type="text" id="search-input" placeholder="请输入您要查找的信息">  
+			                <button type="submit">搜索</button>  
+			            </form>  
+			        </div>  
+					<div class="user-actions">
+					   <a href="登录.html" class="action-link">登录</a>  
+					   <a href="注册.html" class="action-link">注册</a>  
+					 </div>  
+							 
+		</div>
+		<div class="nav">
+					<li><a href="主页.html">首页</a></li>
+				  	<li><a href="">列表</a></li>
+				  	<li><a href="预定.html">在线预订</a></li>
+				  </div>
+		
+		<div class="container">
+		    <div class="column">  
+		        <h2><a href="地区简介.html">下姜村地区简介</a></h2>  
+		        <p>下姜村位于浙江省杭州市淳安县枫树岭镇的一个小山村,下姜村起初是典型的贫困村，在艰难的转型下，还曾先后获评“全国乡村游重点村”、“全国生态宜居十佳村”等荣誉。<a href="地区简介.html"> 详情</a></p> 
+				<div class="box">
+							<img src="img/下姜村.png" alt="image-1"  height="400px" width="500px"/>
+						</div>
+		    </div>  
+		    <div class="column">  
+		        <h2><a href="旅游景点.html">下姜村--千岛湖景区</a></h2>  	
+		        <p>千岛湖，位于浙江省杭州市淳安县境内。新安江水库建成后，大坝将新安江上游拦截成一个巨大的湖泊。崇山峻岭淹入湖中成为大小岛屿，故名“千岛湖”。千岛湖分东南湖区、中心湖区、西北湖区等六个游区。<a href="旅游景点.html"> 详情</a></p> 
+				
+					<img src="img/千岛湖.png" alt=" image-2" height="400px" width="500px"/>
+					
+				 
+		    </div>  
+		    <div class="column">  
+		        <h2><a href="旅游攻略.html">下姜村旅游攻略 </a></h2>  
+		        <p>下姜村是一个充满历史文化气息的古村落，位于浙江省杭州市淳安县枫树岭镇，以其独特的传统文化风貌、美丽的自然景观和精致的古建筑而闻名。<a href="旅游攻略.html"> 详情</a></p>  
+				<div class="image-container">
+					<img src="img/旅游活动.png"alt="image 3" class= height="400px" width="500px" />
+					 <div class="overlay"></div> 
+				</div>
+				<div class="footer">
+					<p>&copy;张天一20220000610</p>
+				</div>
+		</div>
+	</body>
+</html>

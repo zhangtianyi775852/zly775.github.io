@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body {
+			    font-family: Arial, sans-serif;  
+			    background-color: #fff;  
+			    margin: 0 auto;  
+				padding: 0;
+				background-color:#CBE8FF ;
+				width: 1650px;
+			   
+			}  
+			.header{
+					background: url("img/background.jpg") no-repeat top center;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+					height: 186px;
+				}
+				.logo{
+					
+					padding-bottom: 30px;
+					padding-left: 100px;
+				}
+			.search-container {  
+			    max-width: 600px;  
+			    margin: 0 auto;  
+			    text-align: center;  
+				padding-left: 550px;
+			}  
+			  
+			h1 {  
+			    color: green;  
+			    text-align: center;  
+			    margin-bottom: 20px;  
+			}  
+			  
+			.search-form {  
+			    display: flex;  
+			    align-items: center;  
+			    justify-content: center;  
+			    margin-bottom: 20px;  
+			}  
+			  
+			.search-form input[type="text"] {  
+			    padding: 10px;  
+			    font-size: 16px;  
+			    border: 1px solid #ccc;  
+			    border-radius: 4px 0 0 4px;  
+				width: 200px;
+			}  
+			  
+			.search-form button {  
+			    padding: 10px 20px;  
+			    font-size: 16px;  
+			    color: white;  
+			    background-color: green; /* Or use the same green as the title */  
+			    border: none;  
+			    border-radius: 0 4px 4px 0;  
+			    cursor: pointer;  
+			}  
+			  
+			.search-form button:hover {  
+			    background-color: darkgreen; /* Optional: darker green on hover */  
+			}
+				
+				.user-actions {
+				padding-right: 200px; 
+				padding-top: 100px;
+				}  
+				  
+				.action-link {  
+				  display: inline-block; /* 作为行内块级元素显示，以便设置间距 */  
+				  margin: 0 5px; /* 链接之间的间距 */  
+				  text-decoration: none; /* 去除下划线 */  
+				  color: sandybrown; /* 文本颜色 */  
+				  font-size: 20px;  
+				}  
+				.action-button {  
+				  display: inline-block;  
+				  margin: 0 5px;  
+				  padding: 5px 10px; /* 内边距 */  
+				  background-color: #f00; /* 示例背景色，您可以根据需要更改 */  
+				  color: #fff; /* 文本颜色 */  
+				  border: none; /* 去除边框 */  
+				  cursor: pointer; /* 鼠标悬停时显示小手图标 */  
+				  /* 可以添加其他样式，如边框半径、阴影等 */  
+				}  
+				.action-link:hover,  
+				.action-button:hover {  
+				  /* 例如，您可以更改背景色或文本颜色 */  
+				  color: #f00;  
+				  text-decoration: underline;  
+				}  
+				*{
+				padding: 0px;
+					margin: 0;
+				}
+				.nav{
+					margin: 0;
+					padding: 0;
+					box-sizing: border-box;
+					background-color: #ffe0b2;
+					list-style: none;
+					overflow: hidden;
+					height: 60px;
+				}
+				.nav li{
+					float:left;
+					width: 33.33%;
+					display: flex;
+					justify-content: center;
+				}
+				.nav a{
+					display: block;
+					width: 50%;
+					text-decoration: none;
+					text-align: center;
+					padding: 20px;
+					color: wight;
+					font-weight: bold;
+					font-size: 20;
+				}
+				.box{
+					width:1000px ;
+					height: 1000px;
+					margin-left: auto;  
+					    margin-right: auto;  
+					
+				}
+				.ntitle{
+						font-size: 35px;
+						    text-align: center;
+						    font-weight: bold;
+						    padding: 15px 0px;
+						    color: #333;
+							padding: 30px;
+					}
+					
+					.text p{
+						text-align:justify;
+						text-indent:2em;
+					}
+				.text span{
+					font-family:SimSun;
+					font-size:20px;"
+				}
+				.image{
+					text-align:justify;
+					text-indent:2em;
+						font-family:SimSun;
+						font-size:16px;
+						padding-left:100px;
+						padding-top: 20px;
+						}
+						
+						* {
+						      margin: 0;
+						      padding: 0;
+						    }
+						    ul {
+						      list-style: none;
+						    }
+							
+						    #wrap {
+						      overflow: hidden;
+						      position: relative;
+						      width: 979px;
+						      height: 580px;
+						      margin: 0 auto ;
+						    }
+							
+						    #wrap .img-list {
+						      display: flex;
+						      position: relative;
+						      left: 0px;
+						      width: 100%;
+						      height: 100%;
+						      transition: 0.5s ease;
+						    }
+							
+						    #wrap .img-list img {
+						      width: 979px;
+						      cursor: pointer;
+						    }
+							
+						    #wrap a {
+						      position: absolute;
+						      top: 50%;
+						      transform: translate(0, -50%);
+						      display: block;
+						      width: 40px;
+						      height: 70px;
+						      background-color: rgba(0, 0, 0, 0.7);
+						      color: white;
+						      user-select: none;
+						      font-size: 30px;
+						      text-align: center;
+						      line-height: 70px;
+						      text-decoration: none;
+						    }
+							
+						    #wrap a.left {
+						      left: 0;
+						    }
+							
+						    #wrap a.right {
+						      right: 0;
+						    }
+							
+						    .circle-list {
+						      display: flex;
+						      position: absolute;
+						      bottom: 20px;
+						      left: 50%;
+						      transform: translate(100%, 0);
+						      width: 120px;
+						      height: 40px;
+						      z-index: 8;
+									
+						    }
+						    .circle-list > .circle {
+						      margin: 0 5px;
+						      width: 15px;
+						      height: 15px;
+						      background-color: #ecf0f1;
+						      border-radius: 50%;
+						    }
+							
+						    .circle-list > .circle.active {
+						      background-color: #e74c3c;
+						    }
+							.footer{
+								background-color: #ccc;
+								text-align: center;
+							}
+						</style>
+	</head>
+	<body>
+			<div class="header">
+				<div class="logo">  
+				            <img src="img/logo.png" alt="" width="400px"  height="100px"/>  
+				        </div>  
+				        <div class="search-container">  
+				            <form class="search-form">  
+				                <input type="text" id="search-input" placeholder="请输入您要查找的信息">  
+				                <button type="submit">搜索</button>  
+				            </form>  
+				        </div>  
+						<div class="user-actions">
+						   <a href="登录.html" class="action-link">登录</a>  
+						   <a href="注册.html" class="action-link">注册</a>  
+						 </div> 
+			</div>
+			<div class="nav">
+						<li><a href="主页.html">首页</a></li>
+					  	<li><a href="目录.html">列表页</a>></li>
+					  	<li><a href="预定.html">在线预订</a></li>
+					  </div>
+					<div class="box">
+						<div class="ntitle">下姜村--千岛湖景区</div>
+						<div class="text">
+							<p>
+								<span>
+									千岛湖风景区，又称新安江水库，位于浙江省杭州市淳安县境内。东距杭州129公里、西距黄山140公里，占地面积982平方公里，地处长江三角洲的腹地。千岛湖距杭州市129公里，距黄山市140公里，北接临安市、南接常山县、西南与开化县、衢州市为邻，东南与桐庐和建德二县市接壤，西北与安徽省交界
+									1982年，千岛湖发展旅游业。1986年11月，千岛湖风景区被林业部批复为国家森林公园。2001年千岛湖景区成功创建国家4A级旅游景区。2002年，千岛湖风景区被评为中国保护旅游消费者权益示范景区和浙江青年文明号示范景区。2010年，千岛湖风景区被评为国家AAAAA级景区
+								</span>
+							</p>
+						</div>
+						<div id="wrap">
+						      <!-- 图片列表 -->
+						      <div class="img-list">
+						        <img src="img/景点.png" alt="" width="979px"/>
+						       <img src="img/景点2.png" alt="" width="979px"/>
+						        <img src="img/景点4.png" alt="" width="979px" />  
+						        <img src="img/景点2.png" alt="" width="979px"/>
+						      </div>
+						    
+							
+							 <!-- 小箭头 -->
+							      <div class="arrow">
+							        <a href="javascript:;" class="left"><</a>
+							        <a href="javascript:;" class="right">></a>
+							      </div>
+							
+							      <!-- 小圆点 -->
+							      <ul class="circle-list">
+							        <li class="circle active" data-n="0"></li>
+							        <li class="circle" data-n="1"></li>
+							        <li class="circle" data-n="2"></li>
+							        <li class="circle" data-n="3"></li>
+							        <li class="circle" data-n="4"></li>
+							      </ul>
+						      
+						</div>
+						<div class="footer">
+							<p>&copy;张天一20220000610</p>
+						</div>
+						
+						<script>
+						     // 获取左右按钮和图片列表
+						     let oLeft = document.querySelector(".left");
+						     let oRight = document.querySelector(".right");
+						     let oImgList = document.querySelector(".img-list");
+											
+						     // 克隆第一张图片
+						     let clonefirstImg = oImgList.firstElementChild.cloneNode();
+						     // 将第一张图片添加至图片列表的末尾
+						     oImgList.appendChild(clonefirstImg);
+											
+						     // 图片索引 代表当前是第几张图片  index:0代表第一张图片
+						     let index = 0;
+											
+						     // 设置函数节流锁
+						     let lock = true;
+						     function handleRightBtn() {
+						       if (!lock) return;
+						       index++;
+						       oImgList.style.left = index * -979 + "px";
+						       // 为什么要加过渡? 因为切换到了最后一张假图时会将过渡去掉
+						       oImgList.style.transition = "0.5s ease";
+											
+						       if (index === 5) {
+						         index = 0;
+						         setTimeout(() => {
+						           oImgList.style.left = 0;
+						           // 取消过渡 500毫秒之后切换第一张
+						           oImgList.style.transition = "none";
+						         }, 500);
+						       }
+											
+						       // 设置小圆点的高亮
+						       setCircles();
+						       // 关锁
+						       lock = false;
+						       setTimeout(() => {
+						         lock = true;
+						       }, 500);
+						     }
+											
+						     // 右按钮的实现
+						     oRight.addEventListener("click", handleRightBtn);
+											
+						     // 左按钮的实现  瞬间切换到假图然后拉到真实最后一张图片
+						     oLeft.addEventListener("click", () => {
+						       if (!lock) return;
+						       index--;
+						       if (index === -1) {
+						         oImgList.style.left = 5 * -979 + "px";
+						         oImgList.style.transition = "none";
+						         index = 4;
+						         setTimeout(() => {
+						           oImgList.style.left = index * -979 + "px";
+						           oImgList.style.transition = "0.5s ease";
+						         }, 0);
+						       } else {
+						         oImgList.style.left = index * -979 + "px";
+						       }
+											
+						       // 设置小圆点的高亮
+						       setCircles();
+											
+						       lock = false;
+						       setTimeout(() => {
+						         lock = true;
+						       }, 500);
+						     });
+											
+						     // 获取五个小圆点
+						     const circles = document.querySelectorAll(".circle");
+											
+						     // 小圆点高亮的显示
+						     function setCircles() {
+						       for (let i = 0; i < circles.length; i++) {
+						         if (i === index) {
+						           circles[i].classList.add("active");
+						         } else {
+						           circles[i].classList.remove("active");
+						         }
+						       }
+						     }
+											
+						     // 小圆点点击切换图片 使用事件代理
+						     const oCircle = document.querySelector(".circle-list");
+						     oCircle.addEventListener("click", (e) => {
+						       // 当我点击小圆点的时候
+						       if (e.target.nodeName.toLowerCase() === "li") {
+						         // 当前元素的data-n对应得值 和index一一对应
+						         const n = Number(e.target.getAttribute("data-n"));
+						         index = n;
+						         setCircles();
+						         oImgList.style.transition = "0.5s ease";
+						         oImgList.style.left = index * -1226 + "px";
+						       }
+						     });
+											
+						     // 自动轮播
+						     let autoplay = setInterval(handleRightBtn, 2000);
+						     const oWrap = document.getElementById("wrap");
+						     // 移入停止轮播
+						     oWrap.addEventListener("mouseenter", () => {
+						       clearInterval(autoplay);
+						     });
+						     // 移出继续轮播
+						     oWrap.addEventListener("mouseleave", () => {
+						       // 设表先关
+						       clearInterval(autoplay);
+						       autoplay = setInterval(handleRightBtn, 2000);
+						     });
+											
+						   
+						   </script>
+											
+											
+		</body>
+	</html>
+		

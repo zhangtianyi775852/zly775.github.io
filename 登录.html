@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+	body {  
+	  font-family: Arial, sans-serif;  
+	  background-color: #CBE8FF;  
+	  margin: 0;  
+	  padding: 0;  
+	    justify-content: center;  
+	    align-items: center;  
+	  
+	}  
+	
+	  	.header{
+	  		background: url("img/background.jpg") no-repeat top center;
+	  		display: flex;
+	  		align-items: center;
+	  		justify-content: space-between;
+	  		width: 100%;
+	  		height: 186px;
+	  	}
+	  	.logo{
+	  		
+	  		padding-bottom: 30px;
+	  		padding-left: 100px;
+	  	}
+	  .search-container {  
+	      max-width: 600px;  
+	      margin: 0 auto;  
+	      text-align: center;  
+	  	padding-left: 550px;
+	  }  
+	    
+	  h1 {  
+	      color: green;  
+	      text-align: center;  
+	      margin-bottom: 20px;  
+	  }  
+	    
+	  .search-form {  
+	      display: flex;  
+	      align-items: center;  
+	      justify-content: center;  
+	      margin-bottom: 20px;  
+	  }  
+	    
+	  .search-form input[type="text"] {  
+	      padding: 10px;  
+	      font-size: 16px;  
+	      border: 1px solid #ccc;  
+	      border-radius: 4px 0 0 4px;  
+	  	width: 200px;
+	  }  
+	    
+	  .search-form button {  
+	      padding: 10px 20px;  
+	      font-size: 16px;  
+	      color: white;  
+	      background-color: green; /* Or use the same green as the title */  
+	      border: none;  
+	      border-radius: 0 4px 4px 0;  
+	      cursor: pointer;  
+	  }  
+	    
+	  .search-form button:hover {  
+	      background-color: darkgreen; /* Optional: darker green on hover */  
+	  }
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	.user-actions {  
+	  	padding-right: 200px; 
+	  	padding-top: 100px;
+	  	}  
+	  	  
+	  	.action-link {  
+	  	  display: inline-block; /* 作为行内块级元素显示，以便设置间距 */  
+	  	  margin: 0 5px; /* 链接之间的间距 */  
+	  	  text-decoration: none; /* 去除下划线 */  
+	  	  color: sandybrown; /* 文本颜色 */  
+	  	  font-size: 20px;  
+	  	}  
+	  	.action-button {  
+	  	  display: inline-block;  
+	  	  margin: 0 5px;  
+	  	  padding: 5px 10px; /* 内边距 */  
+	  	  background-color: #f00; /* 示例背景色，您可以根据需要更改 */  
+	  	  color: #fff; /* 文本颜色 */  
+	  	  border: none; /* 去除边框 */  
+	  	  cursor: pointer; /* 鼠标悬停时显示小手图标 */  
+	  	  /* 可以添加其他样式，如边框半径、阴影等 */  
+	  	}  
+	  	.action-link:hover,  
+	  	.action-button:hover {  
+	  	  /* 例如，您可以更改背景色或文本颜色 */  
+	  	  color: #f00;  
+	  	  text-decoration: underline;  
+	  	}  
+	  	  
+	  	/* 如果您选择使用按钮样式 */  
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	
+	  	*{
+	  	padding: 0px;
+	  		margin: 0;
+	  	}
+	  	.nav{
+	  		margin: 0;
+	  		padding: 0;
+	  		box-sizing: border-box;
+	  		background-color: #ffe0b2;
+	  		list-style: none;
+	  		overflow: hidden;
+	  	}
+	  	.nav li{
+	  		float: left;
+	  		width: 33.33%;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+	  	}
+	  	.nav a{
+	  		display: block;
+	  		width: 50%;
+	  		text-decoration: none;
+	  		text-align: center;
+	  		padding: 20px;
+	  		color: wight;
+	  		font-weight: bold;
+	  		font-size: 20;
+	  	}
+	  	.nav ul li ul{
+	  		position: relative;
+	  		top: 40px;
+	  		left: 0;
+	  		display: none;
+	  	}
+	  	
+	  	
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	.container {  
+	  width: 100%;  
+	  max-width: 800px;  
+	  text-align: center;  
+	  padding: 20px;
+	}  
+	  
+	.logo h1 {  
+	  margin: 0;  
+	  padding: 20px;  
+	 
+	  color: #333;  
+	  font-size: 2em;  
+	  background-color: #fff;  
+	  border-bottom: 1px solid #ddd;  
+	}  
+	  
+	.login-register {  
+	  display: flex;  
+	  justify-content: space-between;  
+	  padding-left: 600px;
+	}  
+	  
+	.form-wrapper {  
+	  flex: 1;  
+	  max-width: 300px;  
+	  padding: 80px;  
+	  background-color: #fff;  
+	  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+	  border-radius: 5px; 
+	  height: 400px;
+	}  
+	  
+	.form-wrapper form {  
+	  margin-bottom: 20px;  
+	}  
+	  
+	.form-wrapper h2 {  
+	  margin-top: 0;  
+	  font-size: 1.2em;  
+	  color: #333;  
+	}  
+	  
+	.form-group {  
+	  margin-bottom: 15px;  
+	}  
+	  
+	.form-group label {  
+	  display: block;  
+	  margin-bottom: 5px;  
+	  font-weight: bold;  
+	}  
+	  
+	.form-group input[type="text"],  
+	.form-group input[type="password"] {  
+	  width: 100%;  
+	  padding: 10px;  
+	  border: 1px solid #ccc;  
+	  border-radius: 5
+	  }
+	  .footer{
+	  	background-color: #ccc;
+	  	text-align: center;
+	  }
+	  
+		</style>
+	</head>
+	<body>
+		
+		
+		
+		<div class="header">
+			<div class="logo">  
+			            <img src="img/logo.png" alt="" width="400px"  height="100px"/>  
+			        </div>  
+			        <div class="search-container">  
+			            <form class="search-form">  
+			                <input type="text" id="search-input" placeholder="请输入您要查找的信息">  
+			                <button type="submit">搜索</button>  
+			            </form>  
+			        </div>  
+					<div class="user-actions">
+					   <a href="#"class="action-link">登录</a>  
+					   <a href="注册.html" class="action-link">注册</a>  
+					 </div>  
+							 
+		</div>
+		<div class="nav">
+					<li><a href="主页.html">首页</a></li>
+					<li><a href="目录.html">列表页</a>></li>
+					<li><a href="预定.html">在线预订</a></li>
+				  </div>
+		
+				   <div class="login-register">  
+				      <div class="form-wrapper">  
+				        <form id="login-form" action="#" method="post">  
+				          <h2>用户登陆</h2>  
+				          <div class="form-group">  
+				            <label for="username">用户名:</label>  
+				            <input type="text" id="username" name="username" required>  
+				          </div>  
+				          <div class="form-group">  
+				            <label for="password">密码:</label>  
+				            <input type="password" id="password" name="password" required>  
+				          </div>  
+				          <button type="submit">登陆</button>  
+				        </form>  
+				      </div>  
+				    </div>  
+					<div class="footer">
+				<p>&copy;张天一20220000610</p>
+			</div>
+			
+	</body>
+</html>
